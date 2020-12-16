@@ -69,6 +69,11 @@ en:
         guidance:
           label: Full list of areas and tiers
           link: "/guidance/full-list-of-local-restriction-tiers-by-area"
+      no_tier_information:
+        heading: There is no information about the restrictions in this area
+        guidance:
+          label: Full list of areas and tiers
+          link: "/guidance/full-list-of-local-restriction-tiers-by-area"
       future:
         heading: From %{date}
         level_one:

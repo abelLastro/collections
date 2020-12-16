@@ -1,0 +1,19 @@
+<% content_for :title, t("coronavirus_local_restrictions.results.no_tier_information.heading") %>
+<% render partial: "meta_tags" %>
+
+<%= tag.div :data => {
+  :module => "coronavirus-track-local-restriction-results",
+  "tracking-label" => t("coronavirus_local_restrictions.results.no_tier_information.heading")
+} do %>
+  <%= render "govuk_publishing_components/components/title", {
+    title: t("coronavirus_local_restrictions.results.no_tier_information.heading")
+  } %>
+
+  <%= render "govuk_publishing_components/components/button", {
+    text: t("coronavirus_local_restrictions.results.no_tier_information.guidance.label"),
+    href: t("coronavirus_local_restrictions.results.no_tier_information.guidance.link"),
+    margin_bottom: 9
+  } %>
+
+  <%= render partial: "coronavirus_local_restrictions/travel_guidance" %>
+<% end %>
