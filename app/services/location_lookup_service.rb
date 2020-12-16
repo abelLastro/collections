@@ -34,11 +34,6 @@ class LocationLookupService
     response[:error]
   end
 
-  def lower_tier_area_name
-    lower_tier = data.select { |d| d.area_type.in?(LOWER_TIER_AREA_CODES) }
-    lower_tier.first.area_name
-  end
-
 private
 
   def areas
